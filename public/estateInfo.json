@@ -1,0 +1,78 @@
+[
+  {
+    "estate_title": "Cozy Family Home in Suburban Neighborhood",
+    "id": "1",
+    "segment_name": "single_family_homes",
+    "description": "Charming single-family home with 3 bedrooms and 2 bathrooms. Spacious backyard perfect for family gatherings. Located in a safe and friendly neighborhood.",
+    "price": 350000,
+    "status": "sale",
+    "area_sq_ft": 2000,
+    "location": "Suburban City, State",
+    "image": "single_family_home_image.jpg",
+    "facilities": ["living room", "kitchen"]
+  },
+
+  {
+    "estate_title": "Modern Townhouse with City Views",
+    "id": "2",
+    "segment_name": "townhouses",
+    "description": "Sleek and stylish townhouse featuring 4 bedrooms and 3.5 bathrooms. Enjoy panoramic city views from the rooftop terrace. Close to downtown amenities and public transportation.",
+    "price": 4500,
+    "status": "rent",
+    "area_sq_ft": 2800,
+    "location": "Downtown City, State",
+    "image": "townhouse_image.jpg",
+    "facilities": ["living room", "kitchen", "swimming pool"]
+  },
+
+  {
+    "estate_title": "Luxury Apartment in High-rise Building",
+    "id": "3",
+    "segment_name": "apartments",
+    "description": "Stunning 2-bedroom apartment with floor-to-ceiling windows offering breathtaking views of the skyline. Amenities include a fitness center, concierge service, and on-site parking.",
+    "price": 3000,
+    "status": "rent",
+    "area_sq_ft": 1200,
+    "location": "Urban City, State",
+    "image": "apartment_image.jpg",
+    "facilities": ["living room", "kitchen", "swimming pool"]
+  },
+
+  {
+    "estate_title": "Furnished Student Apartment Near University Campus",
+    "id": "4",
+    "segment_name": "students_housing",
+    "description": "Fully furnished student apartment with 2 bedrooms and shared amenities including a study lounge and fitness center. Walking distance to the university campus and local cafes.",
+    "price": 1500,
+    "status": "rent",
+    "area_sq_ft": 800,
+    "location": "University City, State",
+    "image": "student_housing_image.jpg",
+    "facilities": ["living room", "kitchen"]
+  },
+
+  {
+    "estate_title": "Tranquil Senior Living Community with Assisted Care",
+    "id": "5",
+    "segment_name": "senior_living_communities",
+    "description": "Peaceful senior living community offering assisted care services. Spacious private rooms and beautiful gardens for residents to enjoy. Weekly social activities and outings.",
+    "price": 5000,
+    "status": "rent",
+    "area_sq_ft": 1500,
+    "location": "Scenic City, State",
+    "image": "senior_living_image.jpg",
+    "facilities": ["living room"]
+  },
+  {
+    "estate_title": "Beachfront Villa for a Relaxing Vacation",
+    "id": "6",
+    "segment_name": "vacation_rentals",
+    "description": "Luxurious beachfront villa with 5 bedrooms and a private pool. Perfect for a family vacation or group getaway. Stunning ocean views and easy access to nearby attractions.",
+    "price": 8000,
+    "status": "rent",
+    "area_sq_ft": 3500,
+    "location": "Tropical Island, State",
+    "image": "vacation_rental_image.jpg",
+    "facilities": ["living room", "kitchen", "swimming pool"]
+  }
+]
