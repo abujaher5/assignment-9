@@ -17,7 +17,7 @@ const Home = () => {
         <EstateCard key={singleInfo.id} aboutState={singleInfo}></EstateCard>
       ))} */}
 
-      <div className="flex flex-col lg:flex-row lg:grid lg:grid-cols-4 lg:gap-2">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-4 lg:gap-2">
         <div>
           <LeftSideNav></LeftSideNav>
         </div>
