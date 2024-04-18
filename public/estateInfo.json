@@ -8,7 +8,7 @@
     "status": "sale",
     "area_sq_ft": 2000,
     "location": "Suburban City, State",
-    "image": "single_family_home_image.jpg",
+    "image": "https://i.ibb.co/CtGrttw/house-1836070-1280.jpg",
     "facilities": ["living room", "kitchen"]
   },
 
@@ -21,7 +21,7 @@
     "status": "rent",
     "area_sq_ft": 2800,
     "location": "Downtown City, State",
-    "image": "townhouse_image.jpg",
+    "image": "https://i.ibb.co/DbzPQ1q/kitchen-1543493-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
   },
 
@@ -34,7 +34,7 @@
     "status": "rent",
     "area_sq_ft": 1200,
     "location": "Urban City, State",
-    "image": "apartment_image.jpg",
+    "image": "https://i.ibb.co/wY0YsFM/residence-2219972-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
   },
 
@@ -47,7 +47,7 @@
     "status": "rent",
     "area_sq_ft": 800,
     "location": "University City, State",
-    "image": "student_housing_image.jpg",
+    "image": "https://i.ibb.co/N7qFwJq/bedroom-1940169-1280.jpg",
     "facilities": ["living room", "kitchen"]
   },
 
@@ -60,7 +60,7 @@
     "status": "rent",
     "area_sq_ft": 1500,
     "location": "Scenic City, State",
-    "image": "senior_living_image.jpg",
+    "image": "https://i.ibb.co/crCyyQ2/hallway-2228277-1280.jpg",
     "facilities": ["living room"]
   },
   {
@@ -72,7 +72,7 @@
     "status": "rent",
     "area_sq_ft": 3500,
     "location": "Tropical Island, State",
-    "image": "vacation_rental_image.jpg",
+    "image": "https://i.ibb.co/Fx9z9HP/real-estate-8697166-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
   }
 ]

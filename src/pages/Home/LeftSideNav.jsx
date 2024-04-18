@@ -9,12 +9,12 @@ const LeftSideNav = () => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <div className="space-y-2 p-1">
+    <div className="space-y-2 p-1 ">
       <h3 className="text-lg font-semibold">All Category</h3>
 
       {categories.map((category) => (
         <Link
-          className="block font-semibold rounded-lg btn btn-ghost p-3"
+          className="block  text-left font-semibold rounded-lg btn btn-ghost p-3"
           to={`/category/${category.id}`}
           key={category.id}
         >

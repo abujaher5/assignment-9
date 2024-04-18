@@ -1,50 +1,51 @@
+// import { useLoaderData } from "react-router-dom";
 import LeftSideNav from "./LeftSideNav";
 
-const EstateCard = () => {
-  return (
-    <div className="grid grid-cols-3 lg:grid-cols-4">
-      <div>
-        <LeftSideNav></LeftSideNav>
-      </div>
+const EstateCard = ({ aboutState }) => {
+  //   const info = useLoaderData();
+  //   console.log(info);
 
-      <div className=" col-span-2 lg:col-span-3 p-4 shadow-md dark:bg-gray-50 dark:text-gray-800">
-        <div className="flex justify-between pb-4 border-bottom">
-          <div className="flex items-center">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="mb-0 capitalize dark:text-gray-800"
-            >
-              Photography
-            </a>
-          </div>
-          <a rel="noopener noreferrer" href="#">
-            See All
-          </a>
+  const {
+    estate_title,
+    id,
+    segment_name,
+    description,
+    price,
+    status,
+    area_sq_ft,
+    location,
+    image,
+    facilities,
+  } = aboutState;
+
+  console.log(aboutState);
+  return (
+    <div className="p-4 shadow-md dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex justify-between pb-4 border-bottom">
+        <div className="flex items-center">
+          <h3 className="text-xl font-semibold dark:text-violet-600">
+            {estate_title}
+          </h3>
         </div>
-        <div className="space-y-4">
-          <div className="space-y-2">
-            <img
-              src="https://source.unsplash.com/random/480x360/?4"
-              alt=""
-              className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-            />
-            <div className="flex items-center text-xs">
-              <span>6 min ago</span>
-            </div>
+        <button className="bg-green-500 px-4 py-1 rounded-lg">{status}</button>
+      </div>
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <img
+            src={image}
+            alt=""
+            className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+          />
+          <div className="flex items-center text-xs">
+            <span>{location}</span>
           </div>
-          <div className="space-y-2">
-            <a rel="noopener noreferrer" href="#" className="block">
-              <h3 className="text-xl font-semibold dark:text-violet-600">
-                Facere ipsa nulla corrupti praesentium pariatur architecto
-              </h3>
-            </a>
-            <p className="leading-snug dark:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Repellat, excepturi.
-            </p>
-          </div>
+        </div>
+        <div className="space-y-2">
+          <p className="leading-snug dark:text-gray-600">{description}</p>
+
+          <button className="btn font-semibold text-green-800 bg-yellow-400 btn-ghost lg:btn-wide">
+            View Property
+          </button>
         </div>
       </div>
     </div>
