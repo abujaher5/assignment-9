@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ResidenceContext } from "../../providers/AuthProvider";
 
 const Register = () => {
+  const { createUser } = useContext(ResidenceContext);
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -8,8 +11,17 @@ const Register = () => {
     const photo = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
-    const confirmPassword = form.get("confirmPassword");
-    console.log(name, photo, email, password, confirmPassword);
+
+    console.log(name, photo, email, password);
+
+    //create User
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -68,18 +80,7 @@ const Register = () => {
                   required
                 />
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Confirm Password</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="Confirm Password"
-                  name="confirmPassword"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
+
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
               </div>

@@ -1,4 +1,5 @@
 // import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LeftSideNav from "./LeftSideNav";
 
 const EstateCard = ({ aboutState }) => {
@@ -18,7 +19,6 @@ const EstateCard = ({ aboutState }) => {
     facilities,
   } = aboutState;
 
-  console.log(aboutState);
   return (
     <div className="p-4 shadow-md dark:bg-gray-50 dark:text-gray-800">
       <div className="flex justify-between pb-4 border-bottom">
@@ -43,9 +43,11 @@ const EstateCard = ({ aboutState }) => {
         <div className="space-y-2">
           <p className="leading-snug dark:text-gray-600">{description}</p>
 
-          <button className="btn font-semibold text-green-800 bg-yellow-400 btn-ghost lg:btn-wide">
-            View Property
-          </button>
+          <Link to={`/estateDetails/${id}`}>
+            <button className="btn font-semibold text-green-800 bg-yellow-400 btn-ghost lg:btn-wide">
+              View Property
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
     "description": "Charming single-family home with 3 bedrooms and 2 bathrooms. Spacious backyard perfect for family gatherings. Located in a safe and friendly neighborhood.",
     "price": 350000,
     "status": "sale",
-    "area_sq_ft": 2000,
+    "area": 2000,
     "location": "Suburban City, State",
     "image": "https://i.ibb.co/CtGrttw/house-1836070-1280.jpg",
     "facilities": ["living room", "kitchen"]
@@ -19,7 +19,7 @@
     "description": "Sleek and stylish townhouse featuring 4 bedrooms and 3.5 bathrooms. Enjoy panoramic city views from the rooftop terrace. Close to downtown amenities and public transportation.",
     "price": 4500,
     "status": "rent",
-    "area_sq_ft": 2800,
+    "area": 2800,
     "location": "Downtown City, State",
     "image": "https://i.ibb.co/DbzPQ1q/kitchen-1543493-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
@@ -32,7 +32,7 @@
     "description": "Stunning 2-bedroom apartment with floor-to-ceiling windows offering breathtaking views of the skyline. Amenities include a fitness center, concierge service, and on-site parking.",
     "price": 3000,
     "status": "rent",
-    "area_sq_ft": 1200,
+    "area": 1200,
     "location": "Urban City, State",
     "image": "https://i.ibb.co/wY0YsFM/residence-2219972-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
@@ -45,7 +45,7 @@
     "description": "Fully furnished student apartment with 2 bedrooms and shared amenities including a study lounge and fitness center. Walking distance to the university campus and local cafes.",
     "price": 1500,
     "status": "rent",
-    "area_sq_ft": 800,
+    "area": 800,
     "location": "University City, State",
     "image": "https://i.ibb.co/N7qFwJq/bedroom-1940169-1280.jpg",
     "facilities": ["living room", "kitchen"]
@@ -58,7 +58,7 @@
     "description": "Peaceful senior living community offering assisted care services. Spacious private rooms and beautiful gardens for residents to enjoy. Weekly social activities and outings.",
     "price": 5000,
     "status": "rent",
-    "area_sq_ft": 1500,
+    "area": 1500,
     "location": "Scenic City, State",
     "image": "https://i.ibb.co/crCyyQ2/hallway-2228277-1280.jpg",
     "facilities": ["living room"]
@@ -70,7 +70,7 @@
     "description": "Luxurious beachfront villa with 5 bedrooms and a private pool. Perfect for a family vacation or group getaway. Stunning ocean views and easy access to nearby attractions.",
     "price": 8000,
     "status": "rent",
-    "area_sq_ft": 3500,
+    "area": 3500,
     "location": "Tropical Island, State",
     "image": "https://i.ibb.co/Fx9z9HP/real-estate-8697166-1280.jpg",
     "facilities": ["living room", "kitchen", "swimming pool"]
