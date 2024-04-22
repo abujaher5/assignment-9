@@ -5,6 +5,10 @@ import { ResidenceContext } from "../providers/AuthProvider";
 const Navbar = () => {
   const { user, logOut } = useContext(ResidenceContext);
 
+  console.log(user);
+
+  const { photoURL, email, displayName } = user;
+
   const handleSignOut = () => {
     logOut()
       .then((result) => console.log(result.user))
@@ -20,6 +24,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/userProfile">User Profile</NavLink>
+      </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
       </li>
     </>
   );
@@ -51,27 +58,26 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">ChosePlace</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-3">{navLinks}</ul>
         </div>
 
         <div className="navbar-end">
+          gt
           <div
             tabIndex={0}
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+              <img alt="User Photo" src={photoURL} />
             </div>
-          </div>
 
-          {user ? (
+            <h2>{email}</h2>
+          </div>
+          {user.email ? (
             <button
               onClick={handleSignOut}
               className="btn btn-ghost text-green-600"

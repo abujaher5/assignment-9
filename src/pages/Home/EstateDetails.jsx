@@ -48,6 +48,8 @@ const EstateDetails = () => {
         </div>
         <div className="space-y-2">
           <p className="leading-snug dark:text-gray-600">{description}</p>
+
+          <p>Area : {area} sq ft</p>
         </div>
         <div>
           {/* <ul>
@@ -56,6 +58,11 @@ const EstateDetails = () => {
                 {item}
               </li>
             ))}
+          </ul> */}
+          {/* <ul>
+            <li>{facilities[0]}</li>
+            <li>{facilities[1]}</li>
+            <li>{facilities[2]}</li>
           </ul> */}
         </div>
       </div>

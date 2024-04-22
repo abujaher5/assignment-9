@@ -7,13 +7,13 @@ const UserProfile = () => {
 
   const { displayName, photoURL, email } = user;
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card w-full lg:w-1/2 mx-auto  bg-base-100 my-10 shadow-xl">
       <figure>
-        <img src={photoURL} alt="Shoes" />
+        <img src={photoURL} alt="User Photo" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{displayName}</h2>
-        <p>{email}</p>
+        <h2 className="card-title text-center">User Name : {displayName}</h2>
+        <p> User Email : {email}</p>
       </div>
     </div>
   );
