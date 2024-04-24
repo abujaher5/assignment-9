@@ -50,20 +50,12 @@ const EstateDetails = () => {
           <p className="leading-snug dark:text-gray-600">{description}</p>
 
           <p>Area : {area} sq ft</p>
+          <p>Segment Name : {segment_name}</p>
         </div>
         <div>
-          {/* <ul>
-            {facilities.map((item, index) => (
-              <li key={index} className="block">
-                {item}
-              </li>
-            ))}
-          </ul> */}
-          {/* <ul>
-            <li>{facilities[0]}</li>
-            <li>{facilities[1]}</li>
-            <li>{facilities[2]}</li>
-          </ul> */}
+          <ul>
+            <li>Facilities : {facilities}</li>
+          </ul>
         </div>
       </div>
     </div>
