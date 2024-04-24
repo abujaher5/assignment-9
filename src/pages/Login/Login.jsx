@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ResidenceContext } from "../../providers/AuthProvider";
 // import { signInWithEmailAndPassword } from "firebase/auth";
 import { FaGithub, FaGoogle } from "react-icons/fa";
@@ -18,6 +18,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate("/");
       })
       .catch((error) => console.log("error", error.message));
   };
@@ -26,10 +27,14 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate("/");
       })
       .catch((error) => console.log("error", error.message));
   };
   const { signIn } = useContext(ResidenceContext);
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -42,6 +47,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
+        navigate(location.state ? location.state : "/");
       })
       .catch((error) => console.error(error));
   };

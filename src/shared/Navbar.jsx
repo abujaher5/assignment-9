@@ -7,7 +7,7 @@ const Navbar = () => {
 
   console.log(user);
 
-  const { photoURL, email, displayName } = user;
+  const { photoURL, email, displayName } = user || {};
 
   const handleSignOut = () => {
     logOut()
@@ -65,7 +65,6 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          gt
           <div
             tabIndex={0}
             role="button"
@@ -77,7 +76,7 @@ const Navbar = () => {
 
             <h2>{email}</h2>
           </div>
-          {user.email ? (
+          {user ? (
             <button
               onClick={handleSignOut}
               className="btn btn-ghost text-green-600"

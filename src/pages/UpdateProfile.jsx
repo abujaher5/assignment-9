@@ -5,7 +5,7 @@ const UpdateProfile = () => {
   const { user } = useContext(ResidenceContext);
   console.log(user);
 
-  const { displayName, photoURL, email } = user;
+  const { displayName, photoURL, email } = user || {};
   return (
     <div>
       <div className="card w-full lg:w-1/2 mx-auto  bg-base-100 my-10 shadow-xl">
